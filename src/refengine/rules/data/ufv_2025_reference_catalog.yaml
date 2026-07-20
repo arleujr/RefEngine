@@ -1,0 +1,2359 @@
+catalog_id: ufv-2025-references
+catalog_version: 1.0.1
+scope: Reference construction only; no citation scanning or TCC reading.
+source:
+  title: Normalização de trabalhos acadêmicos
+  institution: Universidade Federal de Viçosa - Biblioteca Central
+  year: 2025
+  norms:
+  - ABNT NBR 6023:2018
+  manual_sha256: 2dab733f767f21dd759a34a6a9a649c64a7c1f75ee922593b9528f9cdb35dc2c
+  covered_printed_pages:
+  - 54
+  - 106
+  covered_sections:
+  - '5.1'
+  - '5.2'
+  - '5.3'
+  - '5.4'
+  - '5.5'
+  - '5.6'
+  - '5.7'
+  - '5.8'
+  - '5.9'
+  - '5.10'
+  - '5.11'
+  - 5.12.1-5.12.34
+output_policy:
+  ordering: alphabetical
+  access_date: processing_date
+  network_access: false
+  typographic_emphasis: uniform_for_titles
+  line_spacing: single
+  alignment: left
+  blank_line_between_references: true
+  doi_url_deduplication: true
+  distinct_url_with_doi: true
+fields:
+- id: authors
+  label: Autores pessoais
+  repeatable: true
+  value_type: text_list
+- id: corporate_author
+  label: Autor pessoa jurídica
+  repeatable: false
+  value_type: text
+- id: jurisdiction
+  label: Jurisdição ou cabeçalho da entidade
+  repeatable: false
+  value_type: text
+- id: entity_heading
+  label: Cabeçalho institucional
+  repeatable: false
+  value_type: text
+- id: event_name
+  label: Nome do evento
+  repeatable: false
+  value_type: text
+- id: event_number
+  label: Número do evento
+  repeatable: false
+  value_type: text
+- id: event_year
+  label: Ano de realização do evento
+  repeatable: false
+  value_type: text
+- id: event_place
+  label: Local de realização do evento
+  repeatable: false
+  value_type: text
+- id: title
+  label: Título principal
+  repeatable: false
+  value_type: text
+- id: subtitle
+  label: Subtítulo
+  repeatable: false
+  value_type: text
+- id: edition
+  label: Edição
+  repeatable: false
+  value_type: text
+- id: version
+  label: Versão
+  repeatable: false
+  value_type: text
+- id: other_responsibility
+  label: Outras responsabilidades
+  repeatable: false
+  value_type: text
+- id: place
+  label: Local de publicação
+  repeatable: false
+  value_type: text
+- id: publisher
+  label: Editora, produtor, gravadora ou entidade publicadora
+  repeatable: false
+  value_type: text
+- id: publication_year
+  label: Ano de publicação
+  repeatable: false
+  value_type: text
+- id: publication_date
+  label: Data de publicação
+  repeatable: false
+  value_type: text
+- id: start_year
+  label: Ano inicial
+  repeatable: false
+  value_type: text
+- id: end_year
+  label: Ano final
+  repeatable: false
+  value_type: text
+- id: physical_description
+  label: Descrição física
+  repeatable: false
+  value_type: text
+- id: illustrations
+  label: Ilustrações
+  repeatable: false
+  value_type: text
+- id: dimensions
+  label: Dimensões
+  repeatable: false
+  value_type: text
+- id: series
+  label: Série ou coleção
+  repeatable: false
+  value_type: text
+- id: notes
+  label: Notas complementares
+  repeatable: true
+  value_type: text_list
+- id: isbn
+  label: ISBN
+  repeatable: false
+  value_type: text
+- id: issn
+  label: ISSN
+  repeatable: false
+  value_type: text
+- id: doi
+  label: DOI
+  repeatable: false
+  value_type: text
+- id: url
+  label: Endereço eletrônico
+  repeatable: false
+  value_type: text
+- id: access_date
+  label: Data de acesso
+  repeatable: false
+  value_type: text
+- id: access_time
+  label: Hora de acesso
+  repeatable: false
+  value_type: text
+- id: support
+  label: Suporte ou meio eletrônico
+  repeatable: false
+  value_type: text
+- id: advisor
+  label: Orientador
+  repeatable: false
+  value_type: text
+- id: presentation_year
+  label: Ano de apresentação
+  repeatable: false
+  value_type: text
+- id: pagination
+  label: Paginação total
+  repeatable: false
+  value_type: text
+- id: work_type
+  label: Tipo de trabalho
+  repeatable: false
+  value_type: text
+- id: degree_course
+  label: Grau e curso
+  repeatable: false
+  value_type: text
+- id: academic_affiliation
+  label: Vinculação acadêmica
+  repeatable: false
+  value_type: text
+- id: academic_place
+  label: Local da instituição
+  repeatable: false
+  value_type: text
+- id: defense_year
+  label: Data ou ano de apresentação/defesa
+  repeatable: false
+  value_type: text
+- id: part_title
+  label: Título da parte
+  repeatable: false
+  value_type: text
+- id: part_subtitle
+  label: Subtítulo da parte
+  repeatable: false
+  value_type: text
+- id: host_authors
+  label: Autores ou responsáveis da obra hospedeira
+  repeatable: true
+  value_type: text_list
+- id: host_title
+  label: Título da obra hospedeira
+  repeatable: false
+  value_type: text
+- id: host_subtitle
+  label: Subtítulo da obra hospedeira
+  repeatable: false
+  value_type: text
+- id: host_edition
+  label: Edição da obra hospedeira
+  repeatable: false
+  value_type: text
+- id: volume
+  label: Volume
+  repeatable: false
+  value_type: text
+- id: chapter
+  label: Capítulo ou outra individualização
+  repeatable: false
+  value_type: text
+- id: part_pages
+  label: Páginas ou folhas da parte
+  repeatable: false
+  value_type: text
+- id: recipient
+  label: Destinatário
+  repeatable: false
+  value_type: text
+- id: correspondence_date
+  label: Data da correspondência
+  repeatable: false
+  value_type: text
+- id: correspondence_description
+  label: Descrição física da correspondência
+  repeatable: false
+  value_type: text
+- id: event_document_title
+  label: Título do documento do evento
+  repeatable: false
+  value_type: text
+- id: event_pagination
+  label: Paginação do documento do evento
+  repeatable: false
+  value_type: text
+- id: event_notes
+  label: Notas do evento
+  repeatable: true
+  value_type: text_list
+- id: periodical_title
+  label: Título do periódico
+  repeatable: false
+  value_type: text
+- id: periodical_subtitle
+  label: Subtítulo do periódico
+  repeatable: false
+  value_type: text
+- id: year_designation
+  label: Numeração do ano do periódico/jornal
+  repeatable: false
+  value_type: text
+- id: issue
+  label: Número ou edição
+  repeatable: false
+  value_type: text
+- id: fascicle
+  label: Fascículo ou tomo
+  repeatable: false
+  value_type: text
+- id: article_pages
+  label: Páginas inicial-final do artigo
+  repeatable: false
+  value_type: text
+- id: article_number
+  label: Número do artigo
+  repeatable: false
+  value_type: text
+- id: publication_month
+  label: Mês de publicação
+  repeatable: false
+  value_type: text
+- id: publication_period
+  label: Período de publicação
+  repeatable: false
+  value_type: text
+- id: supplement_designation
+  label: Suplemento, edição especial ou designação equivalente
+  repeatable: false
+  value_type: text
+- id: consulted_period
+  label: Período consultado
+  repeatable: false
+  value_type: text
+- id: newspaper_title
+  label: Título do jornal
+  repeatable: false
+  value_type: text
+- id: newspaper_subtitle
+  label: Subtítulo do jornal
+  repeatable: false
+  value_type: text
+- id: newspaper_date
+  label: Data do jornal
+  repeatable: false
+  value_type: text
+- id: newspaper_section
+  label: Seção, caderno ou parte do jornal
+  repeatable: false
+  value_type: text
+- id: newspaper_pages
+  label: Paginação da matéria de jornal
+  repeatable: false
+  value_type: text
+- id: patent_depositor
+  label: Depositante
+  repeatable: true
+  value_type: text_list
+- id: patent_holder
+  label: Titular
+  repeatable: true
+  value_type: text_list
+- id: patent_attorney
+  label: Procurador
+  repeatable: true
+  value_type: text_list
+- id: patent_number
+  label: Número da patente
+  repeatable: false
+  value_type: text
+- id: deposit_date
+  label: Data de depósito
+  repeatable: false
+  value_type: text
+- id: grant_date
+  label: Data de concessão
+  repeatable: false
+  value_type: text
+- id: patent_classification
+  label: Classificação da patente
+  repeatable: false
+  value_type: text
+- id: legal_document_name
+  label: Nome do documento jurídico
+  repeatable: false
+  value_type: text
+- id: legal_document_number
+  label: Número do documento jurídico
+  repeatable: false
+  value_type: text
+- id: legal_document_date
+  label: Data do documento jurídico
+  repeatable: false
+  value_type: text
+- id: ementa
+  label: Epígrafe ou ementa
+  repeatable: false
+  value_type: text
+- id: publication_source
+  label: Dados da publicação oficial ou fonte consultada
+  repeatable: false
+  value_type: text
+- id: court
+  label: Corte ou tribunal
+  repeatable: false
+  value_type: text
+- id: court_division
+  label: Turma, região, câmara ou unidade
+  repeatable: false
+  value_type: text
+- id: legal_document_type
+  label: Tipo de decisão ou documento
+  repeatable: false
+  value_type: text
+- id: process_number
+  label: Número do processo
+  repeatable: false
+  value_type: text
+- id: judicial_unit
+  label: Vara, ofício, cartório, câmara ou unidade
+  repeatable: false
+  value_type: text
+- id: relator
+  label: Relator
+  repeatable: false
+  value_type: text
+- id: judgment_date
+  label: Data de julgamento
+  repeatable: false
+  value_type: text
+- id: administrative_act_type
+  label: Tipo do ato administrativo
+  repeatable: false
+  value_type: text
+- id: administrative_act_number
+  label: Número do ato administrativo
+  repeatable: false
+  value_type: text
+- id: signature_date
+  label: Data de assinatura
+  repeatable: false
+  value_type: text
+- id: registry_office
+  label: Cartório ou órgão expedidor
+  repeatable: false
+  value_type: text
+- id: registry_document_type
+  label: Tipo de documento civil/cartorial
+  repeatable: false
+  value_type: text
+- id: registry_date
+  label: Data de registro
+  repeatable: false
+  value_type: text
+- id: director
+  label: Diretor
+  repeatable: true
+  value_type: text_list
+- id: producer
+  label: Produtor
+  repeatable: true
+  value_type: text_list
+- id: audiovisual_responsibilities
+  label: Responsabilidades audiovisuais adicionais
+  repeatable: true
+  value_type: text_list
+- id: media_support
+  label: Especificação do suporte audiovisual
+  repeatable: false
+  value_type: text
+- id: sound_responsibility
+  label: Responsável pela autoria sonora
+  repeatable: true
+  value_type: text_list
+- id: composer
+  label: Compositor
+  repeatable: true
+  value_type: text_list
+- id: performer
+  label: Intérprete
+  repeatable: true
+  value_type: text_list
+- id: narrator
+  label: Ledor ou narrador
+  repeatable: true
+  value_type: text_list
+- id: recording_label
+  label: Gravadora
+  repeatable: false
+  value_type: text
+- id: track
+  label: Faixa, lado ou individualização sonora
+  repeatable: false
+  value_type: text
+- id: instrument
+  label: Instrumento ou formação musical
+  repeatable: false
+  value_type: text
+- id: iconographic_support
+  label: Suporte iconográfico
+  repeatable: false
+  value_type: text
+- id: scale
+  label: Escala
+  repeatable: false
+  value_type: text
+- id: map_description
+  label: Descrição física cartográfica
+  repeatable: false
+  value_type: text
+- id: creator
+  label: Criador, inventor ou autor
+  repeatable: true
+  value_type: text_list
+- id: manufacturer
+  label: Produtor ou fabricante
+  repeatable: false
+  value_type: text
+- id: electronic_description
+  label: Descrição física do meio eletrônico
+  repeatable: false
+  value_type: text
+- id: service_title
+  label: Título da informação, serviço ou produto
+  repeatable: false
+  value_type: text
+- id: software_version
+  label: Versão ou edição do recurso eletrônico
+  repeatable: false
+  value_type: text
+general_rules:
+- id: GEN-001
+  category: data_source
+  statement: Os elementos essenciais e complementares devem refletir os dados do documento consultado.
+  section: '5.1'
+  page: 54
+- id: GEN-002
+  category: data_source
+  statement: Quando um dado não existir no documento, outra fonte pode ser usada e o dado acrescentado deve ser
+    indicado entre colchetes.
+  section: '5.1'
+  page: 54
+- id: GEN-003
+  category: presentation
+  statement: Os elementos devem ser apresentados em sequência padronizada.
+  section: '5.3'
+  page: 55
+- id: GEN-004
+  category: presentation
+  statement: A lista deve usar espaço simples, alinhamento à esquerda e uma linha em branco simples entre referências.
+  section: '5.3'
+  page: 55
+- id: GEN-005
+  category: presentation
+  statement: A pontuação deve ser uniforme em todas as referências.
+  section: '5.3'
+  page: 55
+- id: GEN-006
+  category: presentation
+  statement: O recurso tipográfico usado para destacar o título deve ser uniforme em toda a lista.
+  section: '5.3'
+  page: 56
+- id: GEN-007
+  category: complementary_elements
+  statement: Ao adotar elementos complementares, eles devem ser incluídos de modo uniforme nas referências do mesmo
+    tipo.
+  section: '5.3'
+  page: 56
+- id: GEN-008
+  category: online
+  statement: Documentos online devem terminar com Disponível em e Acesso em.
+  section: '5.10'
+  page: 79
+- id: GEN-009
+  category: ordering
+  statement: No sistema alfabético, as referências devem ser ordenadas alfabeticamente pelo elemento de entrada;
+    numerais seguem ordem crescente.
+  section: 5.11.1
+  page: 79
+- id: AUT-001
+  category: authorship
+  statement: Pessoa física entra pelo último sobrenome em maiúsculas, seguido do prenome e demais sobrenomes, abreviados
+    ou não conforme o documento.
+  section: 5.4.1.1
+  page: 56
+- id: AUT-002
+  category: authorship
+  statement: Autores são separados por ponto e vírgula seguido de espaço.
+  section: 5.4.1.1
+  page: 57
+- id: AUT-003
+  category: authorship
+  statement: Até três autores devem ser todos indicados.
+  section: 5.4.1.1
+  page: 57
+- id: AUT-004
+  category: authorship
+  statement: Com quatro ou mais autores, convém indicar todos; é permitido indicar o primeiro seguido de et al.
+  section: 5.4.1.1
+  page: 57
+- id: AUT-005
+  category: authorship
+  statement: Sobrenomes de parentesco como Júnior, Sobrinho, Filho e Neto permanecem ligados ao sobrenome anterior.
+  section: 5.4.1.1
+  page: 58
+- id: AUT-006
+  category: authorship
+  statement: Sobrenomes hispânicos, compostos e com prefixos devem preservar a forma bibliográfica mostrada no manual.
+  section: 5.4.1.1
+  page: 58
+- id: AUT-007
+  category: authorship
+  statement: Responsabilidade por coletânea é indicada após o último responsável, em abreviação minúscula e singular
+    entre parênteses.
+  section: 5.4.1.1
+  page: 58
+- id: AUT-008
+  category: authorship
+  statement: Quando a autoria for desconhecida, a entrada é feita pelo título; não se usa Anônimo ou Autor desconhecido.
+  section: 5.4.1.4
+  page: 63
+- id: AUT-009
+  category: corporate_author
+  statement: Pessoa jurídica entra pela forma conhecida ou destacada no documento, por extenso ou abreviada.
+  section: 5.4.1.2
+  page: 60
+- id: AUT-010
+  category: corporate_author
+  statement: Órgão da administração direta deve ser precedido pelo órgão superior ou pela jurisdição correspondente.
+  section: 5.4.1.2
+  page: 61
+- id: EVT-001
+  category: event_entry
+  statement: Obras de eventos entram pelo nome do evento em maiúsculas, seguido de número, ano e local de realização.
+  section: 5.4.1.3
+  page: 62
+- id: TTL-001
+  category: title
+  statement: Título e subtítulo são reproduzidos como aparecem no documento e separados por dois pontos.
+  section: 5.4.1.5
+  page: 63
+- id: TTL-002
+  category: title
+  statement: Entrada pelo título iniciada por artigo deve grafar em maiúsculas o artigo e a palavra seguinte.
+  section: 5.4.1.5
+  page: 63
+- id: TTL-003
+  category: title
+  statement: Título longo pode ser abreviado no final com reticências entre colchetes, sem alterar o sentido.
+  section: 5.4.1.5
+  page: 64
+- id: TTL-004
+  category: title
+  statement: Quando não houver título, deve-se atribuir denominação entre colchetes; em obra de arte, usa-se [Sem
+    título].
+  section: 5.4.1.5
+  page: 65
+- id: EDI-001
+  category: edition
+  statement: A edição é transcrita com numeral ordinal e abreviação de edição no idioma do documento.
+  section: 5.4.2
+  page: 65
+- id: EDI-002
+  category: edition
+  statement: Versão de documento eletrônico equivale ao elemento edição.
+  section: 5.4.2
+  page: 66
+- id: LOC-001
+  category: place
+  statement: O local é indicado como consta no documento; cidade homônima recebe estado ou país.
+  section: 5.4.3
+  page: 66
+- id: LOC-002
+  category: place
+  statement: Local identificado fora do documento é indicado entre colchetes; local não identificado usa [S. l.].
+  section: 5.4.3
+  page: 67
+- id: PUB-001
+  category: publisher
+  statement: O nome da editora é transcrito como aparece, suprimindo palavras de natureza jurídica ou comercial.
+  section: 5.4.4
+  page: 68
+- id: PUB-002
+  category: publisher
+  statement: 'Editora não identificada usa [s. n.]; local e editora não identificados usam [S. l.: s. n.].'
+  section: 5.4.4
+  page: 69
+- id: DAT-001
+  category: date
+  statement: O ano de publicação é indicado em algarismos arábicos.
+  section: 5.4.5
+  page: 70
+- id: DAT-002
+  category: date
+  statement: Na ausência de ano, usa-se copirraite, distribuição ou impressão; estimativas são indicadas entre colchetes.
+  section: 5.4.5
+  page: 70
+- id: DAT-003
+  category: date
+  statement: O mês antecede o ano e é abreviado no idioma original da publicação.
+  section: 5.4.5
+  page: 71
+- id: DAT-004
+  category: date
+  statement: Período com mais de um mês ou estação é indicado pelo início e fim separados por barra.
+  section: 5.4.5
+  page: 72
+- id: PHY-001
+  category: physical_description
+  statement: A quantidade de unidades físicas é seguida da designação específica e pode incluir detalhes entre parênteses.
+  section: 5.5.1
+  page: 72
+- id: PHY-002
+  category: physical_description
+  statement: Parte de publicação usa página ou folha inicial-final; volume é indicado quando necessário.
+  section: 5.5.2
+  page: 74
+- id: ELE-001
+  category: electronic
+  statement: Recomenda-se indicar o tipo de suporte ou meio eletrônico.
+  section: 5.5.3
+  page: 75
+schemas:
+- id: ufv.1
+  section: 5.12.1
+  main_section: 1
+  printed_page: 81
+  label: Monografia no todo
+  family: monograph
+  medium: print
+  required_fields:
+  - title
+  - place
+  - publisher
+  - publication_year
+  conditional_fields:
+  - authors
+  - corporate_author
+  - subtitle
+  - edition
+  - other_responsibility
+  - physical_description
+  - illustrations
+  - dimensions
+  - series
+  - notes
+  - isbn
+  ordered_fields:
+  - authors
+  - corporate_author
+  - title
+  - subtitle
+  - other_responsibility
+  - edition
+  - place
+  - publisher
+  - publication_year
+  - physical_description
+  - illustrations
+  - dimensions
+  - series
+  - notes
+  - isbn
+  pattern: 'AUTOR. Título: subtítulo. Outra responsabilidade. Edição. Local: Editora, ano. Descrição física. Série.
+    Notas. ISBN.'
+  conditions:
+  - any_of:
+    - authors
+    - corporate_author
+    description: Monografia deve indicar responsabilidade pessoal ou institucional.
+  notes: []
+- id: ufv.2
+  section: 5.12.2
+  main_section: 2
+  printed_page: 81
+  label: Trabalho acadêmico
+  family: academic_work
+  medium: print
+  required_fields:
+  - authors
+  - title
+  - presentation_year
+  - work_type
+  - degree_course
+  - academic_affiliation
+  - academic_place
+  - defense_year
+  conditional_fields:
+  - subtitle
+  - advisor
+  - pagination
+  - doi
+  - url
+  - access_date
+  ordered_fields:
+  - authors
+  - title
+  - subtitle
+  - advisor
+  - presentation_year
+  - pagination
+  - work_type
+  - degree_course
+  - academic_affiliation
+  - academic_place
+  - defense_year
+  - doi
+  - url
+  - access_date
+  pattern: 'AUTOR. Título: subtítulo. Orientador. Ano de apresentação. Paginação. Tipo de trabalho (grau e curso)
+    - Vinculação acadêmica, Local, data de apresentação ou defesa. DOI. Disponível em: URL. Acesso em: data.'
+  conditions:
+  - when_field_present: url
+    then_required:
+    - access_date
+    description: Quando houver endereço online, a data de acesso é obrigatória.
+  notes: []
+- id: ufv.3
+  section: 5.12.3
+  main_section: 3
+  printed_page: 82
+  label: Monografia no todo em meio eletrônico
+  family: monograph
+  medium: electronic
+  required_fields:
+  - title
+  - place
+  - publisher
+  - publication_year
+  conditional_fields:
+  - authors
+  - corporate_author
+  - subtitle
+  - edition
+  - support
+  - physical_description
+  - series
+  - isbn
+  - doi
+  - url
+  - access_date
+  - access_time
+  ordered_fields:
+  - authors
+  - corporate_author
+  - title
+  - subtitle
+  - edition
+  - place
+  - publisher
+  - publication_year
+  - support
+  - physical_description
+  - series
+  - isbn
+  - doi
+  - url
+  - access_date
+  - access_time
+  pattern: 'AUTOR. Título: subtítulo. Edição. Local: Editora, ano. Suporte/descrição eletrônica. DOI. Disponível
+    em: URL. Acesso em: data.'
+  conditions: &id001
+  - any_of:
+    - authors
+    - corporate_author
+    description: Monografia deve indicar responsabilidade pessoal ou institucional.
+  - any_of:
+    - support
+    - url
+    description: Documento eletrônico deve indicar suporte local ou disponibilidade online.
+  - when_field_present: url
+    then_required:
+    - access_date
+    description: Quando houver endereço online, a data de acesso é obrigatória.
+  notes: []
+- id: ufv.4
+  section: 5.12.4
+  main_section: 4
+  printed_page: 84
+  label: Parte de monografia
+  family: monograph_part
+  medium: print
+  required_fields:
+  - authors
+  - part_title
+  - host_authors
+  - host_title
+  - place
+  - publisher
+  - publication_year
+  - part_pages
+  conditional_fields:
+  - part_subtitle
+  - host_subtitle
+  - host_edition
+  - volume
+  - chapter
+  ordered_fields:
+  - authors
+  - part_title
+  - part_subtitle
+  - host_authors
+  - host_title
+  - host_subtitle
+  - host_edition
+  - place
+  - publisher
+  - publication_year
+  - volume
+  - chapter
+  - part_pages
+  pattern: 'AUTOR DA PARTE. Título da parte: subtítulo. In:/Separata de: AUTOR DA OBRA. Título da obra: subtítulo.
+    Edição. Local: Editora, ano. Volume/capítulo, páginas da parte.'
+  conditions: []
+  notes: []
+- id: ufv.5
+  section: 5.12.5
+  main_section: 5
+  printed_page: 84
+  label: Parte de monografia em meio eletrônico
+  family: monograph_part
+  medium: electronic
+  required_fields:
+  - authors
+  - part_title
+  - host_title
+  - place
+  - publisher
+  - publication_year
+  conditional_fields:
+  - part_subtitle
+  - host_authors
+  - host_subtitle
+  - host_edition
+  - volume
+  - chapter
+  - part_pages
+  - support
+  - doi
+  - url
+  - access_date
+  - access_time
+  ordered_fields:
+  - authors
+  - part_title
+  - part_subtitle
+  - host_authors
+  - host_title
+  - host_subtitle
+  - host_edition
+  - place
+  - publisher
+  - publication_year
+  - volume
+  - chapter
+  - part_pages
+  - support
+  - doi
+  - url
+  - access_date
+  - access_time
+  pattern: 'AUTOR DA PARTE. Título da parte. In: AUTOR/OBRA HOSPEDEIRA. Título da obra. Edição. Local: Editora,
+    ano. Parte. Suporte. DOI. Disponível em: URL. Acesso em: data.'
+  conditions: *id001
+  notes: []
+- id: ufv.6
+  section: 5.12.6
+  main_section: 6
+  printed_page: 85
+  label: Correspondência
+  family: correspondence
+  medium: print
+  required_fields:
+  - authors
+  - title
+  - correspondence_date
+  - correspondence_description
+  conditional_fields:
+  - recipient
+  - place
+  - notes
+  ordered_fields:
+  - authors
+  - title
+  - recipient
+  - place
+  - correspondence_date
+  - correspondence_description
+  - notes
+  pattern: REMETENTE. [Título ou denominação]. Destinatário. Local, data. Descrição física da correspondência.
+  conditions: []
+  notes: []
+- id: ufv.7
+  section: 5.12.7
+  main_section: 7
+  printed_page: 85
+  label: Correspondência em meio eletrônico
+  family: correspondence
+  medium: electronic
+  required_fields:
+  - authors
+  - title
+  - correspondence_date
+  - correspondence_description
+  conditional_fields:
+  - recipient
+  - place
+  - support
+  - url
+  - access_date
+  - access_time
+  ordered_fields:
+  - authors
+  - title
+  - recipient
+  - place
+  - correspondence_date
+  - correspondence_description
+  - support
+  - url
+  - access_date
+  - access_time
+  pattern: 'REMETENTE. [Título ou denominação]. Destinatário. Local, data. Descrição da correspondência. Suporte.
+    Disponível em: URL. Acesso em: data.'
+  conditions: *id001
+  notes: []
+- id: ufv.8
+  section: 5.12.8
+  main_section: 8
+  printed_page: 86
+  label: Evento como um todo
+  family: event_whole
+  medium: print
+  required_fields:
+  - event_name
+  - event_year
+  - event_place
+  - event_document_title
+  - place
+  - publisher
+  - publication_year
+  conditional_fields:
+  - event_number
+  - event_pagination
+  - event_notes
+  - isbn
+  ordered_fields:
+  - event_name
+  - event_number
+  - event_year
+  - event_place
+  - event_document_title
+  - place
+  - publisher
+  - publication_year
+  - event_pagination
+  - event_notes
+  - isbn
+  pattern: 'EVENTO, número, ano, local. Título do documento. Local: Editora, ano. Paginação. Notas. ISBN.'
+  conditions: []
+  notes: []
+- id: ufv.9
+  section: 5.12.9
+  main_section: 9
+  printed_page: 86
+  label: Evento no todo em publicação periódica
+  family: event_whole_periodical
+  medium: print
+  required_fields:
+  - event_name
+  - event_year
+  - event_place
+  - event_document_title
+  - periodical_title
+  - place
+  - publisher
+  - publication_date
+  conditional_fields:
+  - event_number
+  - volume
+  - issue
+  - fascicle
+  - supplement_designation
+  - event_notes
+  ordered_fields:
+  - event_name
+  - event_number
+  - event_year
+  - event_place
+  - event_document_title
+  - periodical_title
+  - place
+  - publisher
+  - volume
+  - issue
+  - fascicle
+  - publication_date
+  - supplement_designation
+  - event_notes
+  pattern: 'EVENTO, número, ano, local. Título do documento. Título do periódico. Local: Editora, numeração, data.
+    Suplemento/notas.'
+  conditions: []
+  notes: []
+- id: ufv.10
+  section: 5.12.10
+  main_section: 10
+  printed_page: 87
+  label: Evento como um todo em meio eletrônico
+  family: event_whole
+  medium: electronic
+  required_fields:
+  - event_name
+  - event_year
+  - event_place
+  - event_document_title
+  - place
+  - publisher
+  - publication_year
+  conditional_fields:
+  - event_number
+  - doi
+  - support
+  - url
+  - access_date
+  - access_time
+  ordered_fields:
+  - event_name
+  - event_number
+  - event_year
+  - event_place
+  - event_document_title
+  - place
+  - publisher
+  - publication_year
+  - doi
+  - support
+  - url
+  - access_date
+  - access_time
+  pattern: 'EVENTO, número, ano, local. Título do documento. Local: Editora, ano. DOI. Suporte. Disponível em: URL.
+    Acesso em: data.'
+  conditions: *id001
+  notes: []
+- id: ufv.11
+  section: 5.12.11
+  main_section: 11
+  printed_page: 87
+  label: Parte de evento
+  family: event_part
+  medium: print
+  required_fields:
+  - authors
+  - part_title
+  - event_name
+  - event_year
+  - event_place
+  - event_document_title
+  - place
+  - publisher
+  - publication_year
+  - part_pages
+  conditional_fields:
+  - part_subtitle
+  - event_number
+  ordered_fields:
+  - authors
+  - part_title
+  - part_subtitle
+  - event_name
+  - event_number
+  - event_year
+  - event_place
+  - event_document_title
+  - place
+  - publisher
+  - publication_year
+  - part_pages
+  pattern: 'AUTOR. Título do trabalho. In: EVENTO, número, ano, local. Título do documento. Local: Editora, ano.
+    Páginas.'
+  conditions: []
+  notes: []
+- id: ufv.12
+  section: 5.12.12
+  main_section: 12
+  printed_page: 87
+  label: Parte de evento em publicação periódica
+  family: event_part_periodical
+  medium: print
+  required_fields:
+  - authors
+  - part_title
+  - periodical_title
+  - place
+  - publication_date
+  - event_name
+  - event_year
+  - event_place
+  conditional_fields:
+  - part_subtitle
+  - year_designation
+  - volume
+  - issue
+  - fascicle
+  - part_pages
+  - event_number
+  - supplement_designation
+  ordered_fields:
+  - authors
+  - part_title
+  - part_subtitle
+  - periodical_title
+  - place
+  - year_designation
+  - volume
+  - issue
+  - fascicle
+  - part_pages
+  - publication_date
+  - supplement_designation
+  - event_name
+  - event_number
+  - event_year
+  - event_place
+  pattern: AUTOR. Título do trabalho. Título do periódico, local, ano/volume, número/edição/tomo, páginas, data.
+    Nota do evento, número, ano e local.
+  conditions: []
+  notes: []
+- id: ufv.13
+  section: 5.12.13
+  main_section: 13
+  printed_page: 88
+  label: Parte de evento em meio eletrônico
+  family: event_part
+  medium: electronic
+  required_fields:
+  - authors
+  - part_title
+  - event_name
+  - event_year
+  - event_place
+  - event_document_title
+  - place
+  - publisher
+  - publication_year
+  conditional_fields:
+  - part_subtitle
+  - event_number
+  - part_pages
+  - support
+  - doi
+  - url
+  - access_date
+  - access_time
+  ordered_fields:
+  - authors
+  - part_title
+  - part_subtitle
+  - event_name
+  - event_number
+  - event_year
+  - event_place
+  - event_document_title
+  - place
+  - publisher
+  - publication_year
+  - part_pages
+  - support
+  - doi
+  - url
+  - access_date
+  - access_time
+  pattern: 'AUTOR. Título do trabalho. In: EVENTO, número, ano, local. Título do documento. Local: Editora, ano.
+    Páginas. Suporte. DOI. Disponível em: URL. Acesso em: data.'
+  conditions: *id001
+  notes: []
+- id: ufv.14
+  section: 5.12.14
+  main_section: 14
+  printed_page: 88
+  label: Patente
+  family: patent
+  medium: print
+  required_fields:
+  - authors
+  - title
+  - patent_number
+  - deposit_date
+  conditional_fields:
+  - patent_depositor
+  - patent_holder
+  - patent_attorney
+  - grant_date
+  - patent_classification
+  ordered_fields:
+  - authors
+  - title
+  - patent_depositor
+  - patent_holder
+  - patent_attorney
+  - patent_number
+  - deposit_date
+  - grant_date
+  - patent_classification
+  pattern: INVENTOR/AUTOR. Título. Depositante/titular/procurador. Número da patente. Depósito. Concessão. Classificação.
+  conditions: []
+  notes: []
+- id: ufv.15
+  section: 5.12.15
+  main_section: 15
+  printed_page: 89
+  label: Patente em meio eletrônico
+  family: patent
+  medium: electronic
+  required_fields:
+  - authors
+  - title
+  - patent_number
+  - deposit_date
+  conditional_fields:
+  - patent_depositor
+  - patent_holder
+  - patent_attorney
+  - grant_date
+  - patent_classification
+  - support
+  - url
+  - access_date
+  - access_time
+  ordered_fields:
+  - authors
+  - title
+  - patent_depositor
+  - patent_holder
+  - patent_attorney
+  - patent_number
+  - deposit_date
+  - grant_date
+  - patent_classification
+  - support
+  - url
+  - access_date
+  - access_time
+  pattern: 'INVENTOR/AUTOR. Título. Depositante/titular/procurador. Número da patente. Depósito. Concessão. Suporte.
+    Disponível em: URL. Acesso em: data.'
+  conditions: *id001
+  notes: []
+- id: ufv.16_1
+  section: 5.12.16.1
+  main_section: 16
+  printed_page: 90
+  label: Legislação
+  family: legal_legislation
+  medium: print
+  required_fields:
+  - jurisdiction
+  - legal_document_name
+  - legal_document_date
+  - ementa
+  - publication_source
+  conditional_fields:
+  - legal_document_number
+  - notes
+  ordered_fields:
+  - jurisdiction
+  - legal_document_name
+  - legal_document_number
+  - legal_document_date
+  - ementa
+  - publication_source
+  - notes
+  pattern: JURISDIÇÃO/ENTIDADE. Legislação, número e data. Epígrafe ou ementa. Dados da publicação. Notas.
+  conditions: []
+  notes: []
+- id: ufv.16_2
+  section: 5.12.16.2
+  main_section: 16
+  printed_page: 90
+  label: Legislação em meio eletrônico
+  family: legal_legislation
+  medium: electronic
+  required_fields:
+  - jurisdiction
+  - legal_document_name
+  - legal_document_date
+  - ementa
+  conditional_fields:
+  - legal_document_number
+  - publication_source
+  - support
+  - url
+  - access_date
+  - access_time
+  - notes
+  ordered_fields:
+  - jurisdiction
+  - legal_document_name
+  - legal_document_number
+  - legal_document_date
+  - ementa
+  - publication_source
+  - support
+  - url
+  - access_date
+  - access_time
+  - notes
+  pattern: 'JURISDIÇÃO/ENTIDADE. Legislação, número e data. Epígrafe ou ementa. Dados da publicação. Suporte. Disponível
+    em: URL. Acesso em: data.'
+  conditions: *id001
+  notes: []
+- id: ufv.16_3
+  section: 5.12.16.3
+  main_section: 16
+  printed_page: 91
+  label: Jurisprudência
+  family: legal_jurisprudence
+  medium: print
+  required_fields:
+  - jurisdiction
+  - court
+  - legal_document_type
+  - publication_source
+  conditional_fields:
+  - court_division
+  - process_number
+  - ementa
+  - judicial_unit
+  - relator
+  - judgment_date
+  - notes
+  ordered_fields:
+  - jurisdiction
+  - court
+  - court_division
+  - legal_document_type
+  - process_number
+  - ementa
+  - judicial_unit
+  - relator
+  - judgment_date
+  - publication_source
+  - notes
+  pattern: JURISDIÇÃO. Corte/tribunal. Tipo de documento e processo. Ementa. Unidade. Relator. Julgamento. Dados
+    da publicação.
+  conditions: []
+  notes: []
+- id: ufv.16_4
+  section: 5.12.16.4
+  main_section: 16
+  printed_page: 91
+  label: Jurisprudência em meio eletrônico
+  family: legal_jurisprudence
+  medium: electronic
+  required_fields:
+  - jurisdiction
+  - court
+  - legal_document_type
+  conditional_fields:
+  - court_division
+  - process_number
+  - ementa
+  - judicial_unit
+  - relator
+  - judgment_date
+  - publication_source
+  - support
+  - url
+  - access_date
+  - access_time
+  ordered_fields:
+  - jurisdiction
+  - court
+  - court_division
+  - legal_document_type
+  - process_number
+  - ementa
+  - judicial_unit
+  - relator
+  - judgment_date
+  - publication_source
+  - support
+  - url
+  - access_date
+  - access_time
+  pattern: 'JURISDIÇÃO. Corte/tribunal. Tipo de documento e processo. Ementa. Unidade. Relator. Julgamento. Dados
+    da publicação. Disponível em: URL. Acesso em: data.'
+  conditions: *id001
+  notes: []
+- id: ufv.16_5
+  section: 5.12.16.5
+  main_section: 16
+  printed_page: 92
+  label: Atos administrativos normativos
+  family: legal_administrative_act
+  medium: print
+  required_fields:
+  - jurisdiction
+  - administrative_act_type
+  - signature_date
+  - ementa
+  - publication_source
+  conditional_fields:
+  - entity_heading
+  - administrative_act_number
+  - notes
+  ordered_fields:
+  - jurisdiction
+  - entity_heading
+  - administrative_act_type
+  - administrative_act_number
+  - signature_date
+  - ementa
+  - publication_source
+  - notes
+  pattern: JURISDIÇÃO/ENTIDADE. Tipo, número e data do ato. Ementa. Dados da publicação. Notas.
+  conditions: []
+  notes: []
+- id: ufv.16_6
+  section: 5.12.16.6
+  main_section: 16
+  printed_page: 93
+  label: Atos administrativos normativos em meio eletrônico
+  family: legal_administrative_act
+  medium: electronic
+  required_fields:
+  - jurisdiction
+  - administrative_act_type
+  - signature_date
+  - ementa
+  conditional_fields:
+  - entity_heading
+  - administrative_act_number
+  - publication_source
+  - support
+  - url
+  - access_date
+  - access_time
+  - notes
+  ordered_fields:
+  - jurisdiction
+  - entity_heading
+  - administrative_act_type
+  - administrative_act_number
+  - signature_date
+  - ementa
+  - publication_source
+  - support
+  - url
+  - access_date
+  - access_time
+  - notes
+  pattern: 'JURISDIÇÃO/ENTIDADE. Tipo, número e data do ato. Ementa. Dados da publicação. Disponível em: URL. Acesso
+    em: data.'
+  conditions: *id001
+  notes: []
+- id: ufv.16_7
+  section: 5.12.16.7
+  main_section: 16
+  printed_page: 94
+  label: Documentos civis e de cartórios
+  family: civil_registry
+  medium: print
+  required_fields:
+  - jurisdiction
+  - registry_office
+  - registry_document_type
+  - registry_date
+  conditional_fields:
+  - notes
+  ordered_fields:
+  - jurisdiction
+  - registry_office
+  - registry_document_type
+  - registry_date
+  - notes
+  pattern: 'JURISDIÇÃO. Cartório ou órgão expedidor. Tipo de documento. Registro em: data. Notas.'
+  conditions: []
+  notes: []
+- id: ufv.17
+  section: 5.12.17
+  main_section: 17
+  printed_page: 94
+  label: Publicação periódica
+  family: periodical_collection
+  medium: print
+  required_fields:
+  - periodical_title
+  - place
+  - publisher
+  - start_year
+  conditional_fields:
+  - periodical_subtitle
+  - end_year
+  - issn
+  - notes
+  ordered_fields:
+  - periodical_title
+  - periodical_subtitle
+  - place
+  - publisher
+  - start_year
+  - end_year
+  - issn
+  - notes
+  pattern: 'TÍTULO: subtítulo. Local: Editora, datas inicial-final. ISSN. Notas.'
+  conditions: []
+  notes: []
+- id: ufv.18
+  section: 5.12.18
+  main_section: 18
+  printed_page: 95
+  label: Coleção de publicação periódica em meio eletrônico
+  family: periodical_collection
+  medium: electronic
+  required_fields:
+  - periodical_title
+  - place
+  - publisher
+  - start_year
+  conditional_fields:
+  - periodical_subtitle
+  - end_year
+  - issn
+  - doi
+  - support
+  - url
+  - access_date
+  - access_time
+  - notes
+  ordered_fields:
+  - periodical_title
+  - periodical_subtitle
+  - place
+  - publisher
+  - start_year
+  - end_year
+  - issn
+  - doi
+  - support
+  - url
+  - access_date
+  - access_time
+  - notes
+  pattern: 'TÍTULO: subtítulo. Local: Editora, datas inicial-final. ISSN. DOI. Suporte. Disponível em: URL. Acesso
+    em: data.'
+  conditions: *id001
+  notes: []
+- id: ufv.19
+  section: 5.12.19
+  main_section: 19
+  printed_page: 95
+  label: Parte de coleção de publicação periódica
+  family: periodical_collection_part
+  medium: print
+  required_fields:
+  - periodical_title
+  - place
+  - publisher
+  - start_year
+  - consulted_period
+  conditional_fields:
+  - periodical_subtitle
+  - end_year
+  - issn
+  ordered_fields:
+  - periodical_title
+  - periodical_subtitle
+  - place
+  - publisher
+  - start_year
+  - end_year
+  - consulted_period
+  - issn
+  pattern: 'TÍTULO: subtítulo. Local: Editora, datas inicial-final. Período consultado. ISSN.'
+  conditions: []
+  notes: []
+- id: ufv.20
+  section: 5.12.20
+  main_section: 20
+  printed_page: 95
+  label: Fascículo, suplemento e outros
+  family: periodical_issue
+  medium: print
+  required_fields:
+  - periodical_title
+  - place
+  - publisher
+  - publication_date
+  conditional_fields:
+  - periodical_subtitle
+  - year_designation
+  - volume
+  - issue
+  - fascicle
+  - publication_period
+  - supplement_designation
+  ordered_fields:
+  - periodical_title
+  - periodical_subtitle
+  - place
+  - publisher
+  - year_designation
+  - volume
+  - issue
+  - fascicle
+  - publication_period
+  - publication_date
+  - supplement_designation
+  pattern: 'TÍTULO DA PUBLICAÇÃO: subtítulo. Local: Editora, ano/volume, fascículo, período/data. Suplemento ou
+    edição especial.'
+  conditions: []
+  notes: []
+- id: ufv.21
+  section: 5.12.21
+  main_section: 21
+  printed_page: 96
+  label: Artigo, seção ou matéria de publicação periódica
+  family: periodical_article
+  medium: print
+  required_fields:
+  - authors
+  - title
+  - periodical_title
+  - place
+  - publication_year
+  conditional_fields:
+  - subtitle
+  - periodical_subtitle
+  - year_designation
+  - volume
+  - issue
+  - fascicle
+  - article_pages
+  - article_number
+  - publication_month
+  - publication_period
+  - supplement_designation
+  - notes
+  ordered_fields:
+  - authors
+  - title
+  - subtitle
+  - periodical_title
+  - periodical_subtitle
+  - place
+  - year_designation
+  - volume
+  - issue
+  - fascicle
+  - article_pages
+  - article_number
+  - publication_month
+  - publication_period
+  - publication_year
+  - supplement_designation
+  - notes
+  pattern: 'AUTOR. Título do artigo: subtítulo. Título do periódico: subtítulo. Local, ano/volume, número/fascículo,
+    páginas ou número do artigo, mês/período e ano. Suplemento/notas.'
+  conditions: []
+  notes: []
+- id: ufv.22
+  section: 5.12.22
+  main_section: 22
+  printed_page: 97
+  label: Artigo, seção ou matéria de publicação periódica em meio eletrônico
+  family: periodical_article
+  medium: electronic
+  required_fields:
+  - authors
+  - title
+  - periodical_title
+  - publication_year
+  conditional_fields:
+  - subtitle
+  - periodical_subtitle
+  - place
+  - year_designation
+  - volume
+  - issue
+  - fascicle
+  - article_pages
+  - article_number
+  - publication_month
+  - publication_period
+  - supplement_designation
+  - doi
+  - support
+  - url
+  - access_date
+  - access_time
+  - notes
+  ordered_fields:
+  - authors
+  - title
+  - subtitle
+  - periodical_title
+  - periodical_subtitle
+  - place
+  - year_designation
+  - volume
+  - issue
+  - fascicle
+  - article_pages
+  - article_number
+  - publication_month
+  - publication_period
+  - publication_year
+  - supplement_designation
+  - doi
+  - support
+  - url
+  - access_date
+  - access_time
+  - notes
+  pattern: 'AUTOR. Título do artigo: subtítulo. Título do periódico: subtítulo. Local, ano/volume, número/fascículo,
+    páginas ou artigo, mês/período e ano. DOI. Suporte. Disponível em: URL. Acesso em: data.'
+  conditions: *id001
+  notes: []
+- id: ufv.23
+  section: 5.12.23
+  main_section: 23
+  printed_page: 98
+  label: Artigo ou matéria de jornal
+  family: newspaper_article
+  medium: print
+  required_fields:
+  - authors
+  - title
+  - newspaper_title
+  - place
+  - newspaper_date
+  conditional_fields:
+  - subtitle
+  - newspaper_subtitle
+  - year_designation
+  - volume
+  - issue
+  - newspaper_section
+  - newspaper_pages
+  - doi
+  ordered_fields:
+  - authors
+  - title
+  - subtitle
+  - newspaper_title
+  - newspaper_subtitle
+  - place
+  - year_designation
+  - volume
+  - issue
+  - newspaper_date
+  - newspaper_section
+  - newspaper_pages
+  - doi
+  pattern: 'AUTOR. Título do artigo: subtítulo. Título do jornal: subtítulo. Local, ano/volume, data. Seção/caderno/parte
+    e páginas. DOI.'
+  conditions: []
+  notes: []
+- id: ufv.24
+  section: 5.12.24
+  main_section: 24
+  printed_page: 98
+  label: Artigo ou matéria de jornal em meio eletrônico
+  family: newspaper_article
+  medium: electronic
+  required_fields:
+  - authors
+  - title
+  - newspaper_title
+  - place
+  - newspaper_date
+  conditional_fields:
+  - subtitle
+  - newspaper_subtitle
+  - year_designation
+  - volume
+  - issue
+  - newspaper_section
+  - newspaper_pages
+  - doi
+  - support
+  - url
+  - access_date
+  - access_time
+  ordered_fields:
+  - authors
+  - title
+  - subtitle
+  - newspaper_title
+  - newspaper_subtitle
+  - place
+  - year_designation
+  - volume
+  - issue
+  - newspaper_date
+  - newspaper_section
+  - newspaper_pages
+  - doi
+  - support
+  - url
+  - access_date
+  - access_time
+  pattern: 'AUTOR. Título do artigo: subtítulo. Título do jornal: subtítulo. Local, ano/volume, data. Seção/caderno/parte
+    e páginas. DOI. Disponível em: URL. Acesso em: data.'
+  conditions: *id001
+  notes: []
+- id: ufv.25_1
+  section: 5.12.25.1
+  main_section: 25
+  printed_page: 99
+  label: Filmes, vídeos e outros
+  family: audiovisual
+  medium: print
+  required_fields:
+  - title
+  - publication_year
+  - media_support
+  conditional_fields:
+  - director
+  - producer
+  - place
+  - publisher
+  - audiovisual_responsibilities
+  - physical_description
+  - notes
+  ordered_fields:
+  - title
+  - director
+  - producer
+  - audiovisual_responsibilities
+  - place
+  - publisher
+  - publication_year
+  - media_support
+  - physical_description
+  - notes
+  pattern: 'TÍTULO. Diretor/produtor e demais responsabilidades. Local: Empresa produtora/distribuidora, data. Suporte
+    e descrição física. Notas.'
+  conditions: []
+  notes: []
+- id: ufv.25_2
+  section: 5.12.25.2
+  main_section: 25
+  printed_page: 99
+  label: Filmes, vídeos e outros em meio eletrônico
+  family: audiovisual
+  medium: electronic
+  required_fields:
+  - title
+  - publication_year
+  - media_support
+  conditional_fields:
+  - director
+  - producer
+  - place
+  - publisher
+  - audiovisual_responsibilities
+  - physical_description
+  - support
+  - url
+  - access_date
+  - access_time
+  - notes
+  ordered_fields:
+  - title
+  - director
+  - producer
+  - audiovisual_responsibilities
+  - place
+  - publisher
+  - publication_year
+  - media_support
+  - physical_description
+  - support
+  - url
+  - access_date
+  - access_time
+  - notes
+  pattern: 'TÍTULO. Diretor/produtor e demais responsabilidades. Local: Empresa, data. Suporte e descrição física.
+    Disponível em: URL. Acesso em: data.'
+  conditions: *id001
+  notes: []
+- id: ufv.26
+  section: 5.12.26
+  main_section: 26
+  printed_page: 100
+  label: Documento sonoro no todo
+  family: sound_document
+  medium: print
+  required_fields:
+  - title
+  - sound_responsibility
+  - publication_year
+  - media_support
+  conditional_fields:
+  - authors
+  - composer
+  - performer
+  - narrator
+  - place
+  - recording_label
+  - physical_description
+  - notes
+  ordered_fields:
+  - authors
+  - title
+  - sound_responsibility
+  - composer
+  - performer
+  - narrator
+  - place
+  - recording_label
+  - publication_year
+  - media_support
+  - physical_description
+  - notes
+  pattern: 'AUTOR DO LIVRO, quando houver. TÍTULO. Responsáveis pela autoria sonora. Local: Gravadora, data. Suporte
+    e descrição física.'
+  conditions: []
+  notes: []
+- id: ufv.26_1
+  section: 5.12.26.1
+  main_section: 26
+  printed_page: 101
+  label: Parte de documento sonoro
+  family: sound_document_part
+  medium: print
+  required_fields:
+  - part_title
+  - host_title
+  - publication_year
+  - media_support
+  - track
+  conditional_fields:
+  - performer
+  - composer
+  - sound_responsibility
+  - place
+  - recording_label
+  - physical_description
+  ordered_fields:
+  - part_title
+  - performer
+  - composer
+  - host_title
+  - sound_responsibility
+  - place
+  - recording_label
+  - publication_year
+  - media_support
+  - physical_description
+  - track
+  pattern: 'TÍTULO DA PARTE. Intérprete/compositor. In: TÍTULO DO DOCUMENTO. Responsáveis. Local: Gravadora, data.
+    Suporte. Faixa/lado/individualização.'
+  conditions: []
+  notes: []
+- id: ufv.26_2
+  section: 5.12.26.2
+  main_section: 26
+  printed_page: 101
+  label: Documento sonoro em meio eletrônico
+  family: sound_document
+  medium: electronic
+  required_fields:
+  - title
+  - sound_responsibility
+  - publication_date
+  - media_support
+  conditional_fields:
+  - authors
+  - composer
+  - performer
+  - narrator
+  - place
+  - recording_label
+  - physical_description
+  - support
+  - url
+  - access_date
+  - access_time
+  - notes
+  ordered_fields:
+  - authors
+  - title
+  - sound_responsibility
+  - composer
+  - performer
+  - narrator
+  - place
+  - recording_label
+  - publication_date
+  - media_support
+  - physical_description
+  - support
+  - url
+  - access_date
+  - access_time
+  - notes
+  pattern: 'TÍTULO. Responsáveis pela autoria sonora. Local: Gravadora, data. Suporte. Disponível em: URL. Acesso
+    em: data.'
+  conditions: *id001
+  notes: []
+- id: ufv.27
+  section: 5.12.27
+  main_section: 27
+  printed_page: 101
+  label: Partitura impressa
+  family: score
+  medium: print
+  required_fields:
+  - composer
+  - title
+  - place
+  - publisher
+  - publication_year
+  - physical_description
+  conditional_fields:
+  - subtitle
+  - instrument
+  - notes
+  ordered_fields:
+  - composer
+  - title
+  - subtitle
+  - instrument
+  - place
+  - publisher
+  - publication_year
+  - physical_description
+  - notes
+  pattern: 'COMPOSITOR. Título: subtítulo. Instrumento/formação. Local: Editor, data. Descrição física.'
+  conditions: []
+  notes: []
+- id: ufv.28
+  section: 5.12.28
+  main_section: 28
+  printed_page: 102
+  label: Partitura em meio eletrônico
+  family: score
+  medium: electronic
+  required_fields:
+  - composer
+  - title
+  - publication_year
+  - physical_description
+  conditional_fields:
+  - subtitle
+  - instrument
+  - place
+  - publisher
+  - support
+  - url
+  - access_date
+  - access_time
+  - notes
+  ordered_fields:
+  - composer
+  - title
+  - subtitle
+  - instrument
+  - place
+  - publisher
+  - publication_year
+  - physical_description
+  - support
+  - url
+  - access_date
+  - access_time
+  - notes
+  pattern: 'COMPOSITOR. Título: subtítulo. Instrumento/formação. Local: Editor, data. Descrição física. Disponível
+    em: URL. Acesso em: data.'
+  conditions: *id001
+  notes: []
+- id: ufv.29
+  section: 5.12.29
+  main_section: 29
+  printed_page: 102
+  label: Documento iconográfico
+  family: iconographic
+  medium: print
+  required_fields:
+  - authors
+  - title
+  - publication_year
+  - iconographic_support
+  conditional_fields:
+  - physical_description
+  - illustrations
+  - dimensions
+  - notes
+  ordered_fields:
+  - authors
+  - title
+  - publication_year
+  - iconographic_support
+  - physical_description
+  - illustrations
+  - dimensions
+  - notes
+  pattern: AUTOR. Título ou [Sem título]. Data. Suporte. Descrição física, ilustração, dimensões. Notas.
+  conditions: []
+  notes: []
+- id: ufv.30
+  section: 5.12.30
+  main_section: 30
+  printed_page: 103
+  label: Documento iconográfico em meio eletrônico
+  family: iconographic
+  medium: electronic
+  required_fields:
+  - authors
+  - title
+  - publication_year
+  - iconographic_support
+  conditional_fields:
+  - physical_description
+  - illustrations
+  - dimensions
+  - support
+  - url
+  - access_date
+  - access_time
+  - notes
+  ordered_fields:
+  - authors
+  - title
+  - publication_year
+  - iconographic_support
+  - physical_description
+  - illustrations
+  - dimensions
+  - support
+  - url
+  - access_date
+  - access_time
+  - notes
+  pattern: 'AUTOR. Título ou [Sem título]. Data. Suporte. Descrição física. Disponível em: URL. Acesso em: data.'
+  conditions: *id001
+  notes: []
+- id: ufv.31
+  section: 5.12.31
+  main_section: 31
+  printed_page: 104
+  label: Documento cartográfico
+  family: cartographic
+  medium: print
+  required_fields:
+  - authors
+  - title
+  - place
+  - publisher
+  - publication_year
+  - map_description
+  conditional_fields:
+  - subtitle
+  - scale
+  - physical_description
+  - illustrations
+  - dimensions
+  - notes
+  ordered_fields:
+  - authors
+  - title
+  - subtitle
+  - place
+  - publisher
+  - publication_year
+  - map_description
+  - physical_description
+  - illustrations
+  - dimensions
+  - scale
+  - notes
+  pattern: 'AUTOR. Título: subtítulo. Local: Editora, data. Descrição física. Escala. Notas.'
+  conditions: []
+  notes: []
+- id: ufv.32
+  section: 5.12.32
+  main_section: 32
+  printed_page: 104
+  label: Documento cartográfico em meio eletrônico
+  family: cartographic
+  medium: electronic
+  required_fields:
+  - authors
+  - title
+  - place
+  - publisher
+  - publication_year
+  - map_description
+  conditional_fields:
+  - subtitle
+  - scale
+  - physical_description
+  - illustrations
+  - dimensions
+  - support
+  - url
+  - access_date
+  - access_time
+  - notes
+  ordered_fields:
+  - authors
+  - title
+  - subtitle
+  - place
+  - publisher
+  - publication_year
+  - map_description
+  - physical_description
+  - illustrations
+  - dimensions
+  - scale
+  - support
+  - url
+  - access_date
+  - access_time
+  - notes
+  pattern: 'AUTOR. Título: subtítulo. Local: Editora, data. Descrição física. Escala. Disponível em: URL. Acesso
+    em: data.'
+  conditions: *id001
+  notes: []
+- id: ufv.33
+  section: 5.12.33
+  main_section: 33
+  printed_page: 105
+  label: Documento tridimensional
+  family: three_dimensional
+  medium: print
+  required_fields:
+  - creator
+  - title
+  - publication_year
+  - physical_description
+  conditional_fields:
+  - place
+  - manufacturer
+  - dimensions
+  - notes
+  ordered_fields:
+  - creator
+  - title
+  - place
+  - manufacturer
+  - publication_year
+  - physical_description
+  - dimensions
+  - notes
+  pattern: 'CRIADOR. Título, se houver. Local: Produtor/fabricante, data. Especificação do objeto. Dimensões. Notas.'
+  conditions: []
+  notes: []
+- id: ufv.34
+  section: 5.12.34
+  main_section: 34
+  printed_page: 106
+  label: Documento de acesso exclusivo em meio eletrônico
+  family: exclusive_electronic
+  medium: electronic
+  required_fields:
+  - corporate_author
+  - service_title
+  - publication_year
+  - electronic_description
+  conditional_fields:
+  - authors
+  - software_version
+  - place
+  - support
+  - url
+  - access_date
+  - access_time
+  - notes
+  ordered_fields:
+  - authors
+  - corporate_author
+  - service_title
+  - software_version
+  - place
+  - publication_year
+  - electronic_description
+  - support
+  - url
+  - access_date
+  - access_time
+  - notes
+  pattern: 'AUTOR/ENTIDADE. Título da informação, serviço ou produto. Versão/edição. Local, data. Descrição física
+    do meio eletrônico. Disponível em: URL. Acesso em: data.'
+  conditions:
+  - any_of:
+    - authors
+    - corporate_author
+    description: A entrada pode ser por pessoa física ou pessoa jurídica.
+  - when_field_present: url
+    then_required:
+    - access_date
+    description: Quando houver consulta online, a data de acesso é obrigatória.
+  notes: []

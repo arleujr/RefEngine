@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "RefEngine: local application",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "refengine",
+      "args": ["serve"],
+      "console": "integratedTerminal"
+    }
+  ]
+}

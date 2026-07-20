@@ -1,0 +1,33 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "RefEngine: Sync environment",
+      "type": "shell",
+      "command": "uv sync --frozen --extra dev",
+      "problemMatcher": []
+    },
+    {
+      "label": "RefEngine: Start application",
+      "type": "shell",
+      "command": "uv run refengine serve --open-browser",
+      "problemMatcher": []
+    },
+    {
+      "label": "RefEngine: Backend check",
+      "type": "shell",
+      "command": "uv run refengine backend-check",
+      "problemMatcher": []
+    },
+    {
+      "label": "RefEngine: Run Python tests",
+      "type": "shell",
+      "command": "uv run pytest",
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    }
+  ]
+}

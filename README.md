@@ -1,11 +1,3 @@
-
-
-<div align="center">
-  <video src="https://github.com/user-attachments/assets/c51d9923-573c-4856-be14-110f19a515c5" controls="controls" width="100%" muted="muted">
-    Seu navegador não suporta a tag de vídeo.
-  </video>
-</div>
-
 # RefEngine
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
@@ -15,6 +7,8 @@
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 > **Documentação em português:** [README.pt-BR.md](README.pt-BR.md)
+
+<video align="right" width="450" src="https://github.com/user-attachments/assets/c51d9923-573c-4856-be14-110f19a515c5" controls="controls" muted="muted"></video>
 
 **RefEngine** is an independently developed local web application for extracting, reviewing, and generating academic references from PDF, BibTeX, and RIS files according to the Universidade Federal de Viçosa 2025 reference catalog.
 
@@ -26,6 +20,8 @@ While writing my Agronomy undergraduate thesis at the Universidade Federal de Vi
 Users place source files in the local `input` folder, review the extracted fields in the browser, and publish an alphabetically ordered `.docx` and `.txt` reference list.
 
 > **Note:** RefEngine is an independent support tool and portfolio project. It does not replace human review, the institutional manual, or the author's responsibility for the references used in academic work.
+
+<br clear="right"/>
 
 ---
 

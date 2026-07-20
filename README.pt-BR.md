@@ -7,6 +7,7 @@
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 > **English documentation:** [README.md](README.md)
+<video align="right" width="450" src="https://github.com/user-attachments/assets/c51d9923-573c-4856-be14-110f19a515c5" controls="controls" muted="muted"></video>
 
 A **RefEngine** é uma aplicação web local desenvolvida de forma independente para extrair, revisar e gerar referências acadêmicas a partir de arquivos PDF, BibTeX e RIS, seguindo o catálogo de referências da Universidade Federal de Viçosa de 2025.
 

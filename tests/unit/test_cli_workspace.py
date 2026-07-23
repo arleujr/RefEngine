@@ -1,5 +1,6 @@
 from pathlib import Path
 
+from click.utils import strip_ansi
 from typer.testing import CliRunner
 
 from refengine.cli import app
@@ -30,6 +31,8 @@ def test_cli_exposes_backend_server_not_spreadsheet_commands() -> None:
 def test_serve_command_exposes_cross_platform_options() -> None:
     result = runner.invoke(app, ["serve", "--help"])
 
+    output = strip_ansi(result.output)
+
     assert result.exit_code == 0
-    assert "--port" in result.output
-    assert "--open-browser" in result.output
+    assert "--port" in output
+    assert "--open-browser" in output

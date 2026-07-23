@@ -217,10 +217,21 @@ def ocr_check(
 
 @app.command("serve")
 def serve(
-    port: Annotated[int, typer.Option(min=1, max=65535)] = 8000,
+    port: Annotated[
+        int,
+        typer.Option(
+            "--port",
+            min=1,
+            max=65535,
+            help="Port used by the local application.",
+        ),
+    ] = 8000,
     open_browser: Annotated[
         bool,
-        typer.Option("--open-browser", help="Open the local interface after startup."),
+        typer.Option(
+            "--open-browser",
+            help="Open the local interface after startup.",
+        ),
     ] = False,
 ) -> None:
     """Start the local application on the loopback interface."""

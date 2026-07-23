@@ -329,7 +329,7 @@ def test_source_file_endpoint_opens_the_immutable_run_snapshot(tmp_path: Path) -
         )
 
     assert response.status_code == 200
-    assert response.content == _COMPLETE_BIBTEX.encode("utf-8")
+    assert response.text.replace("\r\n", "\n") == _COMPLETE_BIBTEX
     assert response.headers["content-disposition"].startswith("inline")
     assert invalid.status_code == 404
     assert invalid.json()["error"] == "source_not_found"

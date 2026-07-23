@@ -338,10 +338,11 @@ def _pid_exists(pid: int) -> bool:
         return False
     if os.name == "nt":
         try:
-            from ctypes import WinDLL
+            import ctypes
 
-            kernel32 = WinDLL("kernel32", use_last_error=True)
+            kernel32 = getattr(ctypes, "windll").kernel32
             process_query_limited_information = 0x1000
+
             handle = kernel32.OpenProcess(
                 process_query_limited_information,
                 False,

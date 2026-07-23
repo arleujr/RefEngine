@@ -347,7 +347,7 @@ def _year_from_front_lines(lines: list[str]) -> str | None:
             continue
         years = _YEAR.findall(line)
         if years:
-            return years[-1]
+            return str(years[-1])
     return None
 
 

@@ -748,9 +748,7 @@ class RefEngineApiService:
             missing_required_fields=(
                 list(resolved.missing_required_fields) if included and resolved else []
             ),
-            conflicting_fields=(
-                list(resolved.conflicting_fields) if included and resolved else []
-            ),
+            conflicting_fields=(list(resolved.conflicting_fields) if included and resolved else []),
             can_approve=can_approve,
             correction_suggestions=(
                 [item.model_dump(mode="json") for item in document.correction_suggestions]

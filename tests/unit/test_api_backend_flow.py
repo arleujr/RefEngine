@@ -341,15 +341,13 @@ def test_published_text_is_alphabetical_even_when_repository_loads_by_filename(
     client, _ = _client(tmp_path)
     input_dir = tmp_path / "input"
     (input_dir / "01-zulu.bib").write_text(
-        _COMPLETE_BIBTEX
-        .replace("Silva, Ana and Souza, Bruno", "Zulu, Zoe")
+        _COMPLETE_BIBTEX.replace("Silva, Ana and Souza, Bruno", "Zulu, Zoe")
         .replace("Teste local de referências", "Referência Z")
         .replace("10.1234/demo.2024", "10.1234/zulu.2024"),
         encoding="utf-8",
     )
     (input_dir / "99-avila.bib").write_text(
-        _COMPLETE_BIBTEX
-        .replace("Silva, Ana and Souza, Bruno", "Ávila, Ana")
+        _COMPLETE_BIBTEX.replace("Silva, Ana and Souza, Bruno", "Ávila, Ana")
         .replace("Teste local de referências", "Referência A")
         .replace("10.1234/demo.2024", "10.1234/avila.2024"),
         encoding="utf-8",
@@ -397,7 +395,6 @@ def test_excluding_work_does_not_require_schema_or_mandatory_fields(tmp_path: Pa
     assert response.json()["run"]["excluded_works"] == 1
 
 
-
 def test_generic_native_text_pdf_reaches_review_with_extracted_article_fields(
     tmp_path: Path,
 ) -> None:
@@ -432,9 +429,7 @@ def test_generic_native_text_pdf_reaches_review_with_extracted_article_fields(
         run_id = client.post("/api/v1/runs", json={}).json()["run_id"]
         run = _wait_for_review(client, run_id)
         works = client.get(f"/api/v1/runs/{run_id}/works").json()
-        detail = client.get(
-            f"/api/v1/runs/{run_id}/works/{works[0]['work_id']}"
-        ).json()
+        detail = client.get(f"/api/v1/runs/{run_id}/works/{works[0]['work_id']}").json()
 
     assert run["status"] == "review"
     assert len(works) == 1
@@ -444,6 +439,4 @@ def test_generic_native_text_pdf_reaches_review_with_extracted_article_fields(
     assert fields["authors"] == ["Ana Silva", "Bruno Souza"]
     assert fields["periodical_title"] == ["Journal of Applied Examples"]
     assert detail["readiness"] == "review_required"
-    assert not any(
-        item["code"] == "SCHEMA_NOT_IDENTIFIED" for item in detail["attention_items"]
-    )
+    assert not any(item["code"] == "SCHEMA_NOT_IDENTIFIED" for item in detail["attention_items"])

@@ -12,9 +12,7 @@ _YEAR = re.compile(r"\b(?:19|20)\d{2}\b")
 
 _SECTION_MARKERS = {
     "abstract": re.compile(r"(?im)^\s*(?:abstract|resumo)\s*[:—-]?\s*$"),
-    "keywords": re.compile(
-        r"(?im)^\s*(?:keywords?|key\s+words|palavras[- ]chave)\s*[:—-]"
-    ),
+    "keywords": re.compile(r"(?im)^\s*(?:keywords?|key\s+words|palavras[- ]chave)\s*[:—-]"),
     "references": re.compile(
         r"(?im)^\s*(?:references|refer[eê]ncias|bibliography|bibliografia)\s*$"
     ),
@@ -57,9 +55,7 @@ _VOLUME_ISSUE = re.compile(
     r"(?i)\b(?:vol(?:ume)?\.?|v\.?)\s*(?P<volume>\d+)"
     r"(?:\s*[,;]?\s*(?:no\.?|n\.?|issue)\s*(?P<issue>[A-Za-z0-9.-]+))?"
 )
-_PAGE_RANGE = re.compile(
-    r"(?i)\b(?:pp?\.?|pages?)\s*(?P<start>\d+)\s*[-–—]\s*(?P<end>\d+)"
-)
+_PAGE_RANGE = re.compile(r"(?i)\b(?:pp?\.?|pages?)\s*(?P<start>\d+)\s*[-–—]\s*(?P<end>\d+)")
 _ARTICLE_NUMBER = re.compile(
     r"(?i)\b(?:article(?:\s+number)?|art\.?\s*no\.?)\s*[:#]?\s*(?P<number>[A-Za-z]?\d{4,})\b"
 )
@@ -103,10 +99,10 @@ class ArticleSignals:
             self.has_doi or self.has_abstract or self.has_periodical_marker
         ):
             return True
-        if self.has_doi and self.has_abstract and (
-            self.has_references
-            or self.has_periodical_marker
-            or self.has_publication_history
+        if (
+            self.has_doi
+            and self.has_abstract
+            and (self.has_references or self.has_periodical_marker or self.has_publication_history)
         ):
             return True
         if self.has_abstract and self.has_references and self.has_periodical_marker:
@@ -210,10 +206,7 @@ def generic_periodical_fields(
     if source_url:
         result["source_url"] = source_url
 
-    if any(
-        key in result
-        for key in ("journal", "volume", "issue", "pages", "article_number")
-    ):
+    if any(key in result for key in ("journal", "volume", "issue", "pages", "article_number")):
         result["extractor"] = "generic_periodical_structure"
     return result
 
@@ -275,7 +268,8 @@ def _looks_like_author_line(value: str) -> bool:
     return all(
         1 <= len(part.split()) <= 6
         and all(
-            token[:1].isupper() or token.casefold() in {"de", "da", "do", "dos", "das", "van", "von"}
+            token[:1].isupper()
+            or token.casefold() in {"de", "da", "do", "dos", "das", "van", "von"}
             for token in part.split()
             if token
         )

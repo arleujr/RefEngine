@@ -1017,12 +1017,8 @@ class ReferenceFormatter:
         raw_url = record.value_for("url")
         url = self._strip_terminal(raw_url)
         url_repeats_doi = bool(url and self._url_matches_doi(url, doi_url))
-        should_suppress_duplicate = (
-            self._output_policy.doi_url_deduplication and url_repeats_doi
-        )
-        should_keep_distinct = (
-            not doi_url or self._output_policy.distinct_url_with_doi
-        )
+        should_suppress_duplicate = self._output_policy.doi_url_deduplication and url_repeats_doi
+        should_keep_distinct = not doi_url or self._output_policy.distinct_url_with_doi
         if url and not should_suppress_duplicate and should_keep_distinct:
             parts.append(f"Disponível em: {url}.")
             raw_access = record.value_for("access_date")

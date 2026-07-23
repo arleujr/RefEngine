@@ -9,7 +9,7 @@ from dataclasses import dataclass
 from datetime import UTC, datetime, timedelta
 from pathlib import Path
 from types import TracebackType
-from typing import Self
+from typing import Any, Self
 from uuid import uuid4
 
 
@@ -336,11 +336,13 @@ class OutputTransaction:
 def _pid_exists(pid: int) -> bool:
     if pid <= 0:
         return False
+
     if os.name == "nt":
         try:
             import ctypes
 
-            kernel32 = getattr(ctypes, "windll").kernel32
+            ctypes_module: Any = ctypes
+            kernel32 = ctypes_module.windll.kernel32
             process_query_limited_information = 0x1000
 
             handle = kernel32.OpenProcess(
@@ -350,10 +352,12 @@ def _pid_exists(pid: int) -> bool:
             )
             if not handle:
                 return False
+
             kernel32.CloseHandle(handle)
             return True
         except (AttributeError, OSError):
             return False
+
     try:
         os.kill(pid, 0)
     except ProcessLookupError:
